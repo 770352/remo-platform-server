@@ -30,7 +30,9 @@ Then in termal run:<br>
 ```
 npm run server
 ```
-
+### HELP I CAN'T SIGN UP FOR AN ACCOUNT ON MY SANDBOX!
+Captcha only works for the offical builds. If you would like to bypass captcha, Go to `/src/config/index.js` and change `bypassreCaptcha: false,` to `bypassreCaptcha: true,` 
+This will cause the captcha logic to validate all requests regardless of whether they successfully completed captcha or not, So be careful if you choose to open the sandbox's ports to the internet.
 ## Available Scripts
 
 In the project directory, you can run:
